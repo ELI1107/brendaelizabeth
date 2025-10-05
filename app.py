@@ -263,5 +263,6 @@ db = {
 def inicio():
     return render_template('index.html', db=db)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# ELIMINADO: La parte que iniciaba el servidor local (app.run(debug=True))
+# Render usa Gunicorn para iniciar la aplicación, por lo que estas líneas no son necesarias
+# en el servidor.
